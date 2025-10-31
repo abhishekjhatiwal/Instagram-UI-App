@@ -96,7 +96,7 @@ fun BottomNavInstagram() {
                     )
                 }
                 Image(
-                    painter = painterResource(id = R.drawable.aklogo),
+                    painter = painterResource(id = R.drawable.audi),
                     contentDescription = "Profile Tab",
                     modifier = Modifier
                         .size(34.dp)

@@ -24,26 +24,26 @@ fun InstagramHomeScreenUI(){
     val logoFont = FontFamily(Font(resId = R.font.pacifico_pegular))
 
     val stories = listOf(
-        Story("Your story", R.drawable.aklogo, true),
-        Story("google", R.drawable.googlelogo),
-        Story("cupcake", R.drawable.cupcake),
-        Story("cute.almond", R.drawable.cutealmond),
-        Story("ak2.O", R.drawable.aklogo2)
+        Story("Your story", R.drawable.audi, true),
+        Story("google", R.drawable.marsadi),
+        Story("cupcake", R.drawable.car3),
+        Story("cute.almond", R.drawable.car4),
+        Story("ak2.O", R.drawable.car1)
     )
 
     val posts = listOf(
         Post(
             postUsername = "android_knowledge",
-            postProfileImage = R.drawable.aklogo,
-            postPhoto = R.drawable.desksetup,
+            postProfileImage = R.drawable.audi,
+            postPhoto = R.drawable.car2,
             postCaption = "My Desk Setup",
             postHours = "2hr ago",
             postLikes = "100 likes"
         ),
         Post(
             postUsername = "google",
-            postProfileImage = R.drawable.googlelogo,
-            postPhoto = R.drawable.googlepost,
+            postProfileImage = R.drawable.audi,
+            postPhoto = R.drawable.car6,
             postCaption = "AI Mode ON",
             postHours = "5hrs ago",
             postLikes = "108k likes"
