@@ -44,7 +44,7 @@ fun TopAppBarInstagram(logoFont: FontFamily) {
             }
 
             //Message
-            Box(modifier = Modifier.wrapContentSize(), contentAlignment = Alignment.TopEnd){
+            Box(modifier = Modifier.wrapContentSize(), contentAlignment = Alignment.TopEnd) {
                 IconButton(onClick = {}) {
                     Image(
                         painter = painterResource(id = R.drawable.ic_chat_bob),
@@ -54,7 +54,8 @@ fun TopAppBarInstagram(logoFont: FontFamily) {
                 }
                 //Red Badge Message
                 Box(
-                    modifier = Modifier.size(18.dp)
+                    modifier = Modifier
+                        .size(18.dp)
                         .clip(CircleShape)
                         .background(Color(0xFFFF3B30)),
                     contentAlignment = Alignment.Center
@@ -72,7 +73,8 @@ fun TopAppBarInstagram(logoFont: FontFamily) {
         colors = TopAppBarDefaults.topAppBarColors(
             containerColor = Color(0xFF0F0F0F)
         ),
-        modifier = Modifier.fillMaxWidth()
+        modifier = Modifier
+            .fillMaxWidth()
             .padding(horizontal = 12.dp, vertical = 8.dp)
     )
 }

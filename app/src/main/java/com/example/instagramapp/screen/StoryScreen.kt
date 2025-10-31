@@ -73,14 +73,16 @@ fun StoryItem(story: Story) {
             Image(
                 painter = painterResource(id = story.storyProfileImage),
                 contentDescription = story.storyUsername,
-                modifier = Modifier.size(storyProfileImageSize)
+                modifier = Modifier
+                    .size(storyProfileImageSize)
                     .clip(CircleShape),
                 contentScale = ContentScale.Crop
             )
 
             if (story.isYourStory) {
                 Box(
-                    modifier = Modifier.size(22.dp)
+                    modifier = Modifier
+                        .size(22.dp)
                         .align(Alignment.BottomEnd)
                         .offset(x = 2.dp, y = 2.dp)
                         .clip(CircleShape)

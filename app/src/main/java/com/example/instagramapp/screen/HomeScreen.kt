@@ -20,23 +20,23 @@ import com.example.instagramapp.data.Story
 
 
 @Composable
-fun InstagramHomeScreenUI(){
+fun InstagramHomeScreenUI(modifier : Modifier = Modifier) {
     val logoFont = FontFamily(Font(resId = R.font.pacifico_pegular))
 
     val stories = listOf(
         Story("Your story", R.drawable.audi, true),
         Story("google", R.drawable.marsadi),
-        Story("cupcake", R.drawable.car3),
-        Story("cute.almond", R.drawable.car4),
-        Story("ak2.O", R.drawable.car1)
+        Story("microsoft", R.drawable.car3),
+        Story("infosys", R.drawable.car4),
+        Story("tcs", R.drawable.car1)
     )
 
     val posts = listOf(
         Post(
-            postUsername = "android_knowledge",
+            postUsername = "abhishek_jhatiwal",
             postProfileImage = R.drawable.audi,
             postPhoto = R.drawable.car2,
-            postCaption = "My Desk Setup",
+            postCaption = "My Car Collection",
             postHours = "2hr ago",
             postLikes = "100 likes"
         ),
@@ -51,12 +51,13 @@ fun InstagramHomeScreenUI(){
     )
     MaterialTheme {
         Scaffold(
-            topBar = {TopAppBarInstagram(logoFont)},
-            bottomBar = {BottomNavInstagram()},
+            topBar = { TopAppBarInstagram(logoFont) },
+            bottomBar = { BottomNavInstagram() },
             containerColor = Color(0xFF0F0F0F)
         ) { innerPadding ->
             LazyColumn(
-                modifier = Modifier.fillMaxSize()
+                modifier = Modifier
+                    .fillMaxSize()
                     .padding(innerPadding)
             ) {
                 item { Spacer(modifier = Modifier.height(8.dp)) }

@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             InstagramAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    InstagramHomeScreenUI()
+                    InstagramHomeScreenUI(Modifier.padding(innerPadding))
                 }
             }
         }
