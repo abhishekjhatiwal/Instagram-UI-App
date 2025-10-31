@@ -28,11 +28,13 @@ import androidx.compose.ui.unit.dp
 import com.example.instagramapp.R
 
 @Composable
-fun BottomNavInstagram(){
+fun BottomNavInstagram() {
     NavigationBar(
         containerColor = Color(0xFF0F0F0F),
         tonalElevation = 8.dp,
-        modifier = Modifier.fillMaxWidth().height(68.dp)
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(68.dp)
     ) {
         Row(
             modifier = Modifier.fillMaxSize(),
@@ -40,21 +42,40 @@ fun BottomNavInstagram(){
             verticalAlignment = Alignment.CenterVertically
         ) {
             IconButton(onClick = {}) {
-                Image(painter = painterResource(id = R.drawable.baseline_home_24), contentDescription = "Home", modifier = Modifier.size(26.dp))
+                Image(
+                    painter = painterResource(id = R.drawable.ic_home),
+                    contentDescription = "Home",
+                    modifier = Modifier.size(26.dp)
+                )
             }
             IconButton(onClick = {}) {
-                Image(painter = painterResource(id = R.drawable.baseline_search_24), contentDescription = "Search", modifier = Modifier.size(26.dp))
+                Image(
+                    painter = painterResource(id = R.drawable.ic_search),
+                    contentDescription = "Search",
+                    modifier = Modifier.size(26.dp)
+                )
             }
             IconButton(onClick = {}) {
-                Image(painter = painterResource(id = R.drawable.outline_add_box_24), contentDescription = "Add", modifier = Modifier.size(26.dp))
+                Image(
+                    painter = painterResource(id = R.drawable.ic_add_box),
+                    contentDescription = "Add",
+                    modifier = Modifier.size(26.dp)
+                )
             }
             IconButton(onClick = {}) {
-                Image(painter = painterResource(id = R.drawable.outline_video_library_24), contentDescription = "Reels", modifier = Modifier.size(26.dp))
+                Image(
+                    painter = painterResource(id = R.drawable.ic_video_library),
+                    contentDescription = "Reels",
+                    modifier = Modifier.size(26.dp)
+                )
             }
 
             Box(
-                modifier = Modifier.size(40.dp).clip(CircleShape)
-                    .background(Color.Transparent).clickable{},
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape)
+                    .background(Color.Transparent)
+                    .clickable {},
                 contentAlignment = Alignment.Center
             ) {
                 //Profile Tab Ring
@@ -64,10 +85,12 @@ fun BottomNavInstagram(){
                     }
                     drawCircle(
                         brush = Brush.sweepGradient(
-                            listOf(Color(0xFFFFC107),
+                            listOf(
+                                Color(0xFFFFC107),
                                 Color(0xFFDD2A7B),
                                 Color(0xFF7A00C4),
-                                Color(0xFFFFC107))
+                                Color(0xFFFFC107)
+                            )
                         ), radius = size.minDimension / 2f,
                         style = Stroke(width = stroke)
                     )
@@ -75,7 +98,9 @@ fun BottomNavInstagram(){
                 Image(
                     painter = painterResource(id = R.drawable.aklogo),
                     contentDescription = "Profile Tab",
-                    modifier = Modifier.size(34.dp).clip(CircleShape)
+                    modifier = Modifier
+                        .size(34.dp)
+                        .clip(CircleShape)
                         .offset(x = 0.dp, y = 0.dp),
                     contentScale = ContentScale.Crop
                 )

@@ -66,7 +66,7 @@ fun PostImageCard(post: Post) {
                         )
                         Spacer(modifier = Modifier.width(6.dp))
                         Image(
-                            painter = painterResource(id = R.drawable.baseline_verified_24),
+                            painter = painterResource(id = R.drawable.ic_verified),
                             contentDescription = "verified",
                             modifier = Modifier.size(14.dp)
                         )
